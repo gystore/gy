@@ -1,0 +1,112 @@
+#s_logo{
+	position:absolute;
+	top:50px; left:50px;
+	width:160px;
+	z-index:10;
+	/* display:none; */
+}
+#s_logo img{width:100%;}
+
+#wrap{position:relative; width:100%; min-height:100vh;}
+/* 폼태그 */
+#contact_form{
+	width:80%;
+	padding:150px 0 100px;
+	margin:0 auto;
+}
+#contact_form form{
+	max-height:calc(100% - 83px);
+	
+}
+.contact_form input[type=text],
+.contact_form select,
+.contact_form textarea,
+.contact_form input[type=email],
+.contact_form input[type=tel] {
+	width:100%;
+	padding:20px;
+	border-bottom:1px solid #ccc;
+	box-sizing: border-box;
+	margin-top:20px;
+	margin-bottom: 16px;
+	resize: vertical;
+	background-color:transparent;
+}
+.contact_form > h1 {
+	text-align: center;
+	font-size: 60px;
+	padding-bottom: 50px;
+}
+.contact_form textarea {
+	height:200px;
+	resize:none;
+	border:1px solid #ccc;
+}
+.contact_form input[type=submit] {
+	background-color:#737373;
+	color:white;
+	padding:12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.contact_form input[type=submit]:hover {
+	background-color: #aaa;
+}
+
+
+@media screen and (max-width : 750px){
+	#s_logo{
+		position:absolute;
+		top:20px; left:25px;
+		height:50px; width:auto;
+	}
+	#s_logo img{width:auto; height:100%;}
+	#contact_form{
+		padding:100px 0 60px;
+	}
+	.contact_form > h1 {font-size:40px; padding-bottom:30px;}
+	.contact_form input[type=text],
+	.contact_form select,
+	.contact_form textarea,
+	.contact_form input[type=email],
+	.contact_form input[type=tel] {
+		padding:15px;
+		margin-top:15px;
+		margin-bottom:12px;
+	}
+	.contact_form textarea {
+		height:150px;
+	}
+}
+
+@media screen and (max-width : 450px){
+	
+	.contact_form > h1 {font-size:30px;}	
+	.contact_form input[type=text],
+	.contact_form select,
+	.contact_form textarea,
+	.contact_form input[type=email],
+	.contact_form input[type=tel] {
+		padding:12px;
+		margin-top:12px;
+		margin-bottom:8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

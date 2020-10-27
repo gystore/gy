@@ -1,0 +1,241 @@
+#s_logo{
+	position:absolute;
+	top:50px; left:50px;
+	width:160px;
+	z-index:10;
+	/* display:none; */
+}
+#s_logo img{width:100%;}
+
+#wrap{position:relative; min-height:100vh;}
+
+/* #container */
+#container{
+	width:100%;
+	padding:150px 0 100px;
+}
+#career{padding:0 14%;}
+#career .wel{
+	font-size:96px;
+	margin-bottom:110px;
+}
+#career > ul{
+	padding-bottom:100px;
+}
+#career > ul > li{
+	padding:50px 0;
+	font-size:24px; font-weight:500;
+	border-top:1px solid #797979;
+	cursor:pointer;
+}
+#career > ul > li:last-child{
+	border-bottom:1px solid #797979;
+}
+#career > ul > li > span{
+	padding-left:55px; position:relative;
+}
+#career > ul > li > span .cross{
+	position:absolute;
+	width:24px; height:24px;
+	left:5px; top:50%; transform:translateY(-50%);
+}
+#career > ul > li > span .cross span{
+	width:100%; height:2px;
+	background-color:#000;
+	position:absolute;
+	left:0; top:50%; transform:translateY(-50%);
+	transition:all 0.5s;
+}
+#career > ul > li > span .cross span.ro{
+	opacity:1;
+	transform:translateY(-50%) rotate(-90deg);
+}
+#career > ul > li > span .cross span.ro.on{
+	opacity:0;
+	transform:translateY(-50%) rotate(0);
+}
+#career > ul > li > ul{
+	padding-left:55px;
+	font-size:18px;
+	margin-top:20px;
+	display:none;
+}
+#career > ul > li:last-child > ul{padding-left:0;}
+#career > ul > li > ul li{
+	line-height:2.5;
+}
+
+/* skill - 그래프 */
+#skill_content{
+	width:100%; height:auto;
+	margin:0 auto;
+	display:flex;
+	-webkit-box-align:center;
+	align-items:center;
+	justify-content:space-between;
+	-webkit-box-pack:justify;
+}
+.chart{
+	float:left;
+	position:relative;
+	margin:1%;
+	width:18%; height:0px;
+	padding-top:18%;
+}
+.circle-mask-outer{
+	position:absolute; top:0;
+	width:50%;
+	height:100%;
+	overflow:hidden;
+}
+.circle-mask-inner{
+	position:absolute; top:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.circle-mask-outer.left{left:0;}
+.circle-mask-outer.right{right:0;}
+.circle-mask-outer.left .circle-mask-inner{
+	left:100%;
+	transform-origin:0 50%; 
+	/* 중심축을 왼쪽 중앙으로 지정 */
+	transform:rotate(50deg);
+}
+.circle-mask-outer.right .circle-mask-inner{
+	right:100%;
+	transform-origin:100% 50%; 
+	/* 중심축을 오른쪽 중앙으로 지정 */
+	transform:rotate(160deg);
+}
+.circle-body{
+	border-radius:50%;
+	position:absolute; right:0;
+	width:200%;
+	height:100%;
+}
+.circle-mask-outer.left .circle-body{
+	right:0;
+}
+.circle-mask-outer.right .circle-body{
+	left:0;
+}
+#office .circle-body{background-color:#EF8A70;}
+#graphic .circle-body{background-color:#0f578c;}
+#vod .circle-body{background-color:#343545;}
+#html .circle-body{background-color:#FFC20D;}
+#java .circle-body{background-color:#fc9b33;}
+.chart-content{
+	position:absolute;
+	left:10%; top:10%;
+	width:80%;
+	height:80%;
+	background-color:#fff;
+	border-radius:50%;
+	text-align:center;
+	box-shadow:0 0 20px rgba(0,0,0,0.5);
+	padding:20%;
+	line-height:1;
+}
+.chart-content .icon{width:70%;}
+.chart-content .text{
+	left:5px;
+	position:relative;
+}
+.chart-content .percent-number{
+	font-size:30px;
+	font-weight:600;
+}
+.chart-content .percent-symbol{font-size:20px;}
+
+/* contact me */
+.contact{
+	position:absolute;
+	bottom:0; left:0; right:0;
+	width:100%;
+	background-color:#D19675;
+}
+.contact a{
+	display:block;
+	text-align:center;
+	padding:30px;
+	font-size:30px; color:#FFF;
+	font-weight:800;
+}
+
+
+@media screen and (max-width : 750px){
+	#s_logo{
+		position:absolute;
+		top:20px; left:25px;
+		height:50px; width:auto;
+	}
+	#s_logo img{width:auto; height:100%;}
+	
+	#container{padding:130px 0 100px;}
+	#career{padding:0 12%;}
+	#career .wel{
+		font-size:75px;
+		margin-bottom:80px;
+	}
+	#career > ul > li > ul li p{
+		font-size:16px;
+	}
+	.chart{
+		position:relative;
+		margin:1.666%;
+		width:30%; height:0px;
+		padding-top:30%;
+	}
+	.chart-content .icon{width:60%;}
+	.chart-content .percent-number{
+		font-size:20px;
+	}
+	.chart-content .percent-symbol{font-size:16px;}
+	
+	
+}
+
+@media screen and (max-width : 450px){
+	#container{padding:120px 0 100px;}
+	#career{padding:0 10%;}
+	#career > ul{padding-bottom:50px;}
+	#career .wel{
+		font-size:40px;
+		margin-bottom:40px;
+	}
+	#career > ul > li{
+		padding:30px 0;
+		font-size:20px;
+	}
+	#career > ul > li > ul li p{
+		font-size:14px;
+	}
+
+	.chart{
+		position:relative;
+		margin:1.5%;
+		width:47%; height:0px;
+		padding-top:47%;
+	}
+	.chart-content{letter-spacing:-1px; font-size:5px;}
+	.chart-content .icon{width:80%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

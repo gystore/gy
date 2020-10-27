@@ -1,0 +1,131 @@
+*{margin:0; padding:0;}
+a{text-decoration:none; color:#555; vertical-align:middle;}
+ul,li{list-style:none;}
+.cf::after{content:''; display:block; clear:both;}
+
+
+
+
+section3{
+	width:100%;
+	height:auto;
+}
+.wrap{max-width:1200px; width:100%; height:100%; margin:0 auto; text-align:center; vertical-align:middle;}
+#section3 .wrap{
+	height:100%;
+	padding:150px 30px;
+}
+
+
+/* 포인트 적립 브랜드 로고부분 */
+.brand_in .brand{
+	font-size:0;
+	height:1412px;
+	overflow:hidden;
+	margin:0 -33px;
+}
+.brand_in .brand ul li{
+	float:left;
+	padding:30px 33px;
+	text-align:center;
+	box-sizing:border-box;
+}
+.brand_in .brand ul li figure{display:inline-block;}
+.brand_in .brand ul li figure .pointbenefit{
+	position:relative;
+	width:250px;
+	height:250px;
+	border-radius:50%;
+	border:1px solid #e9e9e9;
+	box-sizing:border-box;
+	overflow:hidden;
+	transition:box-shadow .2s ease-in;
+}
+.pointbenefit::before{
+	content:'';
+	display:inline-block;
+	width:0;
+	height:100%;
+	vertical-align:middle;
+}
+.pointbenefit .pb_logo{
+	width:186px;
+	display:inline-block;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.brand_in .brand ul li figure figcaption{
+	margin-top:15px;
+	font-size:18px;
+	color:#666;
+}
+
+#section3 .wrap .butt{
+	width:100%;
+	height:70px;
+	text-align:center;
+	margin-top:90px;
+}
+#section3 .wrap .butt button{
+	width:280px;
+	box-shadow:5px 5px 10px 0px rgba(0,0,0,0.15);
+	display:inline-block;
+	height:70px;
+	text-align:center;
+	background:#fff;
+	font-size:18px;
+	padding:20px 35px;
+	box-sizing:border-box;
+	border-radius:35px;
+	color:#333;
+	font-weight:700;
+	border:none;
+}
+
+
+@media screen and (max-width:1266px){
+	.brand_in .brand ul{max-width:990px; margin:0 auto;}
+}
+
+@media screen and (max-width:981px){
+	/* 섹션3 */
+	#section3 .wrap{width:100%; padding:50px 30px; box-sizing:border-box;}
+
+	.brand_in .brand{max-width:600px;height: 780px; margin:0 auto;}
+	.brand_in .brand ul{margin:0 -2%;}
+	.brand_in .brand ul li{
+		width:46%;
+		margin:5px 2%;
+		padding:0;
+		box-sizing:border-box;
+	}
+	.brand_in .brand ul li figure{display:block;}
+	.brand_in .brand ul li figure .pointbenefit{
+		width:100%; height:1px; padding-bottom:100%;
+	}
+	.pointbenefit .pb_logo{
+		position:absolute;
+		left:50%;
+		top:50%;
+		width:auto;
+		transform-origin:50%;
+		transform:translate(-50%, -50%) scale(0.65);
+	}
+	.brand_in .brand ul li figure figcaption{
+		font-size:14px; word-break:break-word;
+		color:#222; height:45px;
+	}
+	#section3 .wrap .butt{margin-top:20px;}
+	#section3 .wrap .butt button{
+		width:100%;
+		max-width:400px;
+		height:45px;
+		font-size:12px;
+		padding:13px 30px;
+		border-radius:27px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+body{text-align:center;}
+.balloon{
+	display:inline-block;
+	position:relative;
+	background:#ccc;
+	height:50px;
+	width:120px;
+	margin:100px auto 10px;
+	border:1px solid #333;
+}
+.balloon:after{
+	content:'';
+	position:absolute;
+	border-top:10px solid #ccc;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	bottom:-9px;
+	left:5px;
+}
+
+.balloon:before{
+	content:'';
+	position:absolute;
+	border-top:10px solid #333;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	bottom:-11px;
+	left:5px;
+}
+
+
+
+</style>	
+</head>
+<body>
+	<div class="balloon"></div>
+</body>
+</html>
+
+

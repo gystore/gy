@@ -1,0 +1,132 @@
+#s_logo{
+	position:absolute;
+	top:50px; left:50px;
+	width:160px;
+	z-index:10;
+	/* display:none; */
+}
+#s_logo img{width:100%;}
+
+.cont_cover{
+	width:100%; height:100%;
+	position:relative;
+}
+#contents{
+	padding:60px 0 0;
+	box-sizing:border-box;
+	background-color:#ECECEC;
+	width:100%; height:calc(100% - 290px);
+	position:absolute;
+	top:0; left:0; right:0;
+}
+#contents img{width:100%; height:100%; transform-origin:center;}
+
+#cont_nav{	
+	position: absolute;
+    bottom:0; left:0; right:0;
+    height:290px; width:100%;
+}
+#cont_nav > ul{width:100%; height:100%; position:relative;}
+#cont_nav > ul > li{
+	width:calc(100% - 60px);
+	height:100%;
+	padding: 30px 60px;
+	position:relative;
+	left:0; top:0;
+	box-sizing:border-box;
+}
+#cont_nav > ul > li span{
+	opacity:.55;
+	font-weight:600;
+	letter-spacing:-1px;
+}
+#cont_nav > ul .one .one_cover{display:none;}
+#cont_nav > ul > li h1{
+	font-size:36px;
+	margin:10px 0 20px;
+	transform:scaleX(1.2);
+	transform-origin:left center;
+}
+#cont_nav > ul .one .ul_cover{
+	overflow:hidden;
+	width:0;
+}
+#cont_nav > ul .one .ul_cover ul{
+	width:100vw;
+}
+
+#cont_nav > ul .one ul li{
+	padding:2px 0; float:left;
+	margin-right:25px; font-size:14px;
+}
+#cont_nav > ul .one .ul_cover ul.hide li:not:last-child{
+	display:none;
+}
+#cont_nav > ul > li ul li h3{
+	font-size:14px;
+}
+#cont_nav > ul > li ul li p{
+	margin-top:5px; opacity:.63;
+}
+#cont_nav > ul .one ul li a{
+	font-weight:600; color:inherit;
+	border:1px solid #797979;
+	padding:5px 12px;
+	display:inline-block;
+	vertical-align:top;
+}
+#cont_nav > ul > li.two{
+	background:#EF8A70;
+	z-index:10; padding:0;
+	position:absolute; top:0; left:110%;
+}
+#cont_nav > ul .two a{
+	color:inherit; 
+	display:block; padding:30px 25px;
+	width:100%; height:100%;
+	box-sizing:border-box;
+}
+#cont_nav > ul .vertical{
+	position:absolute;
+	transform:rotate(90deg);
+	font-weight:600;
+	font-size:14px;
+}
+#cont_nav > ul .one .vertical{
+	bottom:30px; right:60px;
+	transform-origin:right bottom;
+	display:none;
+}
+#cont_nav > ul .two .vertical{
+	top:50%; left:25px;
+	transform-origin:left bottom;
+}
+
+
+@media screen and (max-width : 750px){
+	#s_logo{
+		position:absolute;
+		top:20px; left:25px;
+		height:50px; width:auto;
+	}
+	#s_logo img{width:auto; height:100%;}	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
